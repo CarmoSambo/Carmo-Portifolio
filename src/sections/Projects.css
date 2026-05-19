@@ -1,0 +1,227 @@
+/* ─── Section ──────────────────────────────────────────────── */
+.projects {
+  padding: 100px 48px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.projects--light {
+  background: #f7f7fb;
+}
+
+.projects--dark {
+  background: #0a0f1e;
+}
+
+/* ─── Header ────────────────────────────────────────────────── */
+.projects-header {
+  text-align: center;
+  margin-bottom: 72px;
+}
+
+.projects-label {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #7b5cff;
+  margin-bottom: 12px;
+}
+
+.projects--dark .projects-label {
+  color: #c084fc;
+}
+
+.projects-title {
+  font-size: clamp(32px, 4vw, 48px);
+  font-weight: 800;
+  letter-spacing: -1px;
+  margin: 0 0 16px;
+  background: linear-gradient(135deg, #7b5cff, #d946ef);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.projects-subtitle {
+  font-size: 1rem;
+  color: #64748b;
+  max-width: 480px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.projects--dark .projects-subtitle {
+  color: #64748b;
+}
+
+/* ─── List ──────────────────────────────────────────────────── */
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ─── Card ──────────────────────────────────────────────────── */
+.project-card {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  padding: 40px;
+  border-radius: 20px;
+  transition: background 0.3s, box-shadow 0.3s, transform 0.25s;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Light card */
+.project-card--light {
+  background: #ffffff;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(123, 92, 255, 0.08);
+}
+
+.project-card--light:hover {
+  box-shadow: 0 12px 40px rgba(123, 92, 255, 0.14);
+}
+
+/* Dark card */
+.project-card--dark {
+  background: #111827;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(180, 109, 242, 0.12);
+}
+
+.project-card--dark:hover {
+  box-shadow: 0 12px 40px rgba(123, 92, 255, 0.20);
+  border-color: rgba(180, 109, 242, 0.25);
+}
+
+/* Reversed layout */
+.project-card--reverse {
+  flex-direction: row-reverse;
+}
+
+/* ─── Text side ─────────────────────────────────────────────── */
+.project-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+  margin: 0;
+  color: #0f172a;
+}
+
+.project-card--dark .project-title {
+  color: #f1f5f9;
+}
+
+.project-desc {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #475569;
+  margin: 0;
+}
+
+.project-card--dark .project-desc {
+  color: #94a3b8;
+}
+
+/* ─── Tech tags ─────────────────────────────────────────────── */
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.project-tag {
+  display: inline-block;
+  padding: 5px 14px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  background: rgba(123, 92, 255, 0.09);
+  color: #7b5cff;
+  border: 1px solid rgba(123, 92, 255, 0.18);
+}
+
+.project-card--dark .project-tag {
+  background: rgba(180, 109, 242, 0.12);
+  color: #c084fc;
+  border-color: rgba(180, 109, 242, 0.22);
+}
+
+/* ─── Link ──────────────────────────────────────────────────── */
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #7b5cff;
+  margin-top: 4px;
+  transition: gap 0.2s, color 0.2s;
+  width: fit-content;
+}
+
+.project-link:hover {
+  gap: 11px;
+  color: #d946ef;
+}
+
+.project-card--dark .project-link {
+  color: #c084fc;
+}
+
+.project-card--dark .project-link:hover {
+  color: #e879f9;
+}
+
+/* ─── Image side ────────────────────────────────────────────── */
+.project-image {
+  flex: 1;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.project-image img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 14px;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.03);
+}
+
+/* ─── Responsive ────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .projects {
+    padding: 80px 24px;
+  }
+
+  .project-card,
+  .project-card--reverse {
+    flex-direction: column;
+    gap: 28px;
+    padding: 28px;
+  }
+
+  .project-image img {
+    height: 200px;
+  }
+}

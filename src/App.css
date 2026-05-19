@@ -1,0 +1,27 @@
+:root {
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.light {
+  --bg: #f7f7fb;
+  --text: #1e293b;
+}
+.dark {
+  --bg: #0f172a;
+  --text: #f1f5f9;
+}
+
+body, .light, .dark {
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s, color 0.3s;
+}
+
+/* push content below fixed navbar */
+#Hero {
+  padding-top: 80px;
+}
