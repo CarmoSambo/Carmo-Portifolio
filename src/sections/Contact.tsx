@@ -5,9 +5,9 @@ import { useTheme } from "../theme/ThemeContext";
 import { useLanguage } from "../i18n/LanguageContext";
 
 // ── Preenche com os teus IDs do EmailJS ──────────────────────
-const EMAILJS_SERVICE_ID  = "SEU_SERVICE_ID";
-const EMAILJS_TEMPLATE_ID = "SEU_TEMPLATE_ID";
-const EMAILJS_PUBLIC_KEY  = "SUA_PUBLIC_KEY";
+const EMAILJS_SERVICE_ID  = "service_e7tvugg";
+const EMAILJS_TEMPLATE_ID = "template_yyism7i";
+const EMAILJS_PUBLIC_KEY  = "-pnD9qXP5iY3RmW_h";
 // ─────────────────────────────────────────────────────────────
 
 type Status = "idle" | "sending" | "success" | "error";
