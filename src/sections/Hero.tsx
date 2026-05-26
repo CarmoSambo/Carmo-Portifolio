@@ -2,10 +2,14 @@ import React from 'react';
 import './Hero.css';
 import { useTheme } from '../theme/ThemeContext';
 import { useLanguage } from '../i18n/LanguageContext';
+import cvPT from '../assets/curriculum vitae/CURRICULUM VITAE(PT).pdf';
+import cvEN from '../assets/curriculum vitae/CV_Carmo_Sambo_EN.pdf';
 
 const Hero: React.FC = () => {
   const { theme } = useTheme();
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
+  const cvFile = language === 'pt' ? cvPT : cvEN;
+  const cvFileName = language === 'pt' ? 'CV_Carmo_Sambo_PT.pdf' : 'CV_Carmo_Sambo_EN.pdf';
 
   return (
     <section id="Hero" className={`hero hero--${theme}`}>
@@ -26,7 +30,7 @@ const Hero: React.FC = () => {
           <p className="hero-desc">{t.hero.description}</p>
 
           <div className="hero-buttons">
-            <a href="/cv.pdf" download className="btn-primary">
+            <a href={cvFile} download={cvFileName} className="btn-primary">
               {t.hero.cv}
             </a>
             <a href="#contact" className="btn-secondary" onClick={(e) => {
@@ -45,7 +49,7 @@ const Hero: React.FC = () => {
               </svg>
               LinkedIn
             </a>
-            <a href="https://github.com/" target="_blank" rel="noreferrer" className="hero-social-link">
+            <a href="https://github.com/carmosambo" target="_blank" rel="noreferrer" className="hero-social-link">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
               </svg>

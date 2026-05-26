@@ -23,7 +23,7 @@ export const translations = {
         {
           role: "FrontEnd Developer",
           company: "EDUPRO, LDA.",
-          period: "2025 – Presente",
+          period: "2025 – 2026",
           description:
             "Desenvolvimento de interfaces modernas e responsivas para a plataforma educacional da empresa, com foco em experiência do utilizador.",
         },
@@ -106,7 +106,7 @@ export const translations = {
         {
           role: "FrontEnd Developer",
           company: "EDUPRO, LDA.",
-          period: "2025 – Present",
+          period: "2025 – 2026",
           description:
             "Development of modern and responsive interfaces for the company's educational platform, with a focus on user experience.",
         },
