@@ -3,21 +3,23 @@ import "./Projects.css";
 import ProjectCard from "./ProjectsCard";
 import { useTheme } from "../theme/ThemeContext";
 import { useLanguage } from "../i18n/LanguageContext";
+import perfectusImg from "../assets/images/Perfectus.png";
+import blastImg from "../assets/images/Blast.png";
 
 const projectMeta = [
   {
     tech: ["HTML", "CSS", "JavaScript", "Bootstrap"],
-    image: "/src/assets/images/Perfectus.png",
+    image: perfectusImg,
     link: "https://perfectus.co.mz",
   },
   {
     tech: ["HTML", "CSS", "JavaScript", "Bootstrap"],
-    image: "/src/assets/images/Blast.png",
+    image: blastImg,
     link: "https://blast.co.mz",
   },
   {
     tech: ["React", "Spring Boot", "PostgreSQL"],
-    image: "/src/assets/images/QuemQuerSerMilionario.png",
+    image: "",
     link: "https://milionario-carmo.vercel.app/",
   },
 ];

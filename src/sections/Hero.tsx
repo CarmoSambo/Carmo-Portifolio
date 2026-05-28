@@ -4,6 +4,7 @@ import { useTheme } from '../theme/ThemeContext';
 import { useLanguage } from '../i18n/LanguageContext';
 import cvPT from '../assets/curriculum vitae/CURRICULUM VITAE(PT).pdf';
 import cvEN from '../assets/curriculum vitae/CV_Carmo_Sambo_EN.pdf';
+import carmoSamboImg from '../assets/images/carmosambo.jpg';
 
 const Hero: React.FC = () => {
   const { theme } = useTheme();
@@ -61,7 +62,7 @@ const Hero: React.FC = () => {
         <div className="hero-image-wrapper">
           <div className="hero-image-ring" />
           <div className="hero-image">
-            <img src="/src/assets/images/carmosambo.jpg" alt="Carmo Sambo" />
+            <img src={carmoSamboImg} alt="Carmo Sambo" />
           </div>
         </div>
       </div>
