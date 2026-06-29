@@ -3,24 +3,43 @@ import "./Projects.css";
 import ProjectCard from "./ProjectsCard";
 import { useTheme } from "../theme/ThemeContext";
 import { useLanguage } from "../i18n/LanguageContext";
-import perfectusImg from "../assets/images/Perfectus.png";
-import blastImg from "../assets/images/Blast.png";
+import tradingviewImg from "../assets/images/tradingview.png";
 
 const projectMeta = [
   {
     tech: ["HTML", "CSS", "JavaScript", "Bootstrap"],
-    image: perfectusImg,
+    image: "",
     link: "https://perfectus.co.mz",
   },
   {
     tech: ["HTML", "CSS", "JavaScript", "Bootstrap"],
-    image: blastImg,
+    image: "",
     link: "https://blast.co.mz",
   },
   {
     tech: ["React", "Spring Boot", "PostgreSQL"],
     image: "",
     link: "https://milionario-carmo.vercel.app/",
+  },
+  {
+    tech: ["React", "HTML", "CSS", "TypeScript", "TailwindCSS", "Vite"],
+    image: "",
+    link: "https://carmosambo-universalconsultingservi.vercel.app/",
+  },
+  {
+    tech: ["React", "HTML", "CSS", "TypeScript", "Vite"],
+    image: "",
+    link: "https://joelle-art.vercel.app/",
+  },
+  {
+    tech: ["Pine"],
+    image: tradingviewImg,
+    link: "https://github.com/CarmoSambo/carmobot-tradingview",
+  },
+  {
+    tech: ["C++", "mq5"],
+    image: "",
+    link: "https://github.com/CarmoSambo/Carmo-Metatrader",
   },
 ];
 
@@ -49,6 +68,7 @@ const Projects: React.FC = () => {
             reverse={index % 2 !== 0}
             theme={theme}
             visitBtn={t.projects.visitBtn}
+            githubBtn={t.projects.githubBtn}
           />
         ))}
       </div>

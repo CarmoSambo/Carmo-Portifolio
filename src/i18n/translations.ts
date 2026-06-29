@@ -47,6 +47,7 @@ export const translations = {
       title: "Projetos",
       subtitle: "Alguns dos trabalhos que desenvolvi ao longo da minha carreira.",
       visitBtn: "Visitar Website",
+      githubBtn: "Ver no GitHub",
       items: [
         {
           title: "Perfectus",
@@ -59,6 +60,22 @@ export const translations = {
         {
           title: "Quem quer ser milionário?",
           description: "Jogo de perguntas e respostas inspirado no famoso programa de TV.",
+        },
+        {
+          title: "Universal Consulting Services",
+          description: "Website institucional para empresa de consultoria, com foco em clareza e profissionalismo.",
+        },
+        {
+          title: "Joelle Art",
+          description: "Portfólio digital para artista, destacando trabalhos e identidade visual.",
+        },
+        {
+          title: "CarmoBot TradingView",
+          description: "Indicador em Pine Script para TradingView, com detecção automática de estrutura de mercado.",
+        },
+        {
+          title: "Carmo MetaTrader",
+          description: "Expert Advisor para MetaTrader, desenvolvido em MQL5 e C++ para automação de estratégias de trading.",
         },
       ],
     },
@@ -130,6 +147,7 @@ export const translations = {
       title: "Projects",
       subtitle: "Some of the work I've developed throughout my career.",
       visitBtn: "Visit Website",
+      githubBtn: "View on GitHub",
       items: [
         {
           title: "Perfectus",
@@ -142,6 +160,22 @@ export const translations = {
         {
           title: "Who Wants to Be a Millionaire?",
           description: "A quiz game inspired by the famous TV show.",
+        },
+        {
+          title: "Universal Consulting Services",
+          description: "Institutional website for a consulting firm, focused on clarity and professionalism.",
+        },
+        {
+          title: "Joelle Art",
+          description: "Digital portfolio for an artist, showcasing work and visual identity.",
+        },
+        {
+          title: "CarmoBot TradingView",
+          description: "Pine Script indicator for TradingView with automatic market structure detection.",
+        },
+        {
+          title: "Carmo MetaTrader",
+          description: "Expert Advisor for MetaTrader, built with MQL5 and C++ to automate trading strategies.",
         },
       ],
     },

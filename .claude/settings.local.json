@@ -3,7 +3,12 @@
     "allow": [
       "Bash(npx tsc *)",
       "Bash(npm install *)",
-      "Bash(npm run *)"
+      "Bash(npm run *)",
+      "Bash(npx vite *)",
+      "Bash(echo \"started with pid $!\")",
+      "Read(//tmp/**)",
+      "Bash(pkill -f \"vite --port 5183\")",
+      "Bash(node shot2.js)"
     ]
   }
 }
